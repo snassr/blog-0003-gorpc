@@ -6,7 +6,7 @@ RPC (Remote Procedure Call): Information is placed on a call stack then control 
 - Go RPC client will only talk to a Go server (using gob serilization).
 - Restrictions
     - Function must be public.
-    - Two Arguments (pointer to a value data to be received by client function, and pointer to hold answered to be returned to the client).
+    - Two Arguments (pointer to a value for data to be received by client function, and pointer to a value to hold response returned to the client).
     - Have a return value of type error. ```func exFunc(&R, &W) error {}```
 
 ## Run

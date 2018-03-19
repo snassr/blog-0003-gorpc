@@ -35,7 +35,7 @@ func (p *Person) LastFirst(args *Person, bp *PersonData) error {
 	return nil
 }
 
-// Bio is an RPC method that displays a person's name in `Last, First` format.
+// Bio is an RPC method that displays a person's biographic data.
 func (p *Person) Bio(args *Person, reply *string) error {
 	*reply = "\tName: " + args.Name.First + " " + args.Name.Last
 	for _, v := range args.Email {

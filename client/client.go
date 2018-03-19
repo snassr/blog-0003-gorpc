@@ -30,7 +30,7 @@ func main() {
 		log.Fatal("Person.FirstLast error:", err)
 	}
 	fmt.Printf("Person.FirstLast: %v\n", reply)
-	// sleep for 1 second before next RPC (not required, just for demo)
+	// sleep for 2 seconds before next RPC (not required, just for demo)
 	time.Sleep(2 * time.Second)
 
 	// RPC call (2)
@@ -41,7 +41,7 @@ func main() {
 		log.Fatal("Person.LastFirst error:", err)
 	}
 	fmt.Printf("Person.LastFirst: %v\n", bPerson.Data)
-	// sleep for 1 second before next RPC (not required, just for demo)
+	// sleep for 2 seconds before next RPC (not required, just for demo)
 	time.Sleep(2 * time.Second)
 
 	// RPC call (3)
@@ -51,6 +51,6 @@ func main() {
 		log.Fatal("Person.Bio error:", err)
 	}
 	fmt.Printf("Person.Bio:\n%v", reply)
-	// sleep for 1 second before next RPC (not required, just for demo)
+	// sleep for 2 seconds before next RPC (not required, just for demo)
 	time.Sleep(2 * time.Second)
 }
